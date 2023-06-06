@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 0;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    /* super poder na div, permite que alteremos a posição dos elementos na tela*/
+    justify-content: space-between;
+    /*permite alinhar os componentes e só pode ser usado quado o display é flex*/
+    align-items: center;
+    /*permite alinhar os componentes na vertical*/
+}
+
+.text-box {
+    width: 600px;
+}
+
+.image-class {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 110px;
+    text-align: center;
+
+}
+
+.logo {
+    width: 80px;
+}
+
+.starbucks {
+    width: 340px;
+}
+
+.botao-menu {
+    width: 60px;
+    transition: 1s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.botao-menu:hover {
+    transform: translateY(-30px);
+}
+
+.circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
+
+@media screen and (max-width:768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        padding: 0;
+        display: block;
+    }
+    .logo {
+        display: block;
+        margin-top: 5%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 15px;
+    }
+
+    .content {
+        width: 100%;
+        display: block;
+    }
+    .text-box {
+        width: 100%;
+        display: block;
+        margin-bottom: 130px;
+    }
+    h2 {
+        font-size: 45px;
+        margin-left: 8%;
+        margin-bottom: 35px;
+    }
+
+    span{
+        font-size: 50px;
+    }
+
+    p {
+        text-align: center;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    button {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .image-class {
+        width: 100%;
+        margin: 0;
+    }
+
+    .starbucks {
+        width: 112px;
+        margin-right: 6%;
+    }
+
+    .circulo{
+        clip-path: circle(170px at right 450px);
+        top: 287px;
+    }
+
+    .menu {
+        margin-top: 25%;
+    }
+}

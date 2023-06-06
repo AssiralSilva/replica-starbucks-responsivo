@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./Assets/logo-icon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Grape+Nuts&family=Lobster+Two:ital@0;1&family=Montserrat:wght@400;500;600;700;900&family=Poppins:wght@200;300;500&display=swap" rel="stylesheet"> 
+    <title>Starbucks</title>
+</head>
+
+<body>
+
+    <div class="circulo"></div>
+
+    <header>
+        <img src="./Assets/logo.png" alt="starbucks-logo" class="logo">
+    </header>
+
+    <section class="content">
+        <div class="text-box">
+            <h2>Its's not just Coffee<br> It's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis error amet mollitia ratione! Consequatur
+                culpa in quod quam quae at quo rem, voluptate saepe fugiat eveniet assumenda magnam debitis odit.</p>
+            <button>Learn More</button>
+        </div>
+    
+        <div class="image-class">
+            <img src="./Assets/img1.png" alt="first-image" class="starbucks">
+        </div>
+    </section>
+
+    <footer class="menu">
+        <img src="./Assets/thumb1.png" class="botao-menu"onclick="trocaImagem('./Assets/img1.png'); trocaCor('#017143')">
+        <img src="./Assets/thumb2.png" class="botao-menu" onclick="trocaImagem('./Assets/img2.png'); trocaCor('#eb7495')">
+        <img src="./Assets/thumb3.png" class="botao-menu"onclick="trocaImagem('./Assets/img3.png'); trocaCor('#d752b1')">
+    </footer>
+</body>
+
+<script src="./scripts.js"></script>
+
+<!--
+    javascript
+    /* console.log("Funfo") mostra informações na aba console do inspect*/
+    /*let abacate = "Oi eu sou uma variável"
+    let mario = 30
+    console.log(abacate)*/
+-->
+
+<!--
+    html
+    img src="./Assets/thumb2.png" class="botao-menu" onclick="trocaImagem()">
+    javascript
+    let abacate = "abacate maduro"
+
+    function trocaImagem() {
+        console.log(abacate)
+    }
+
+    Aparecendo na tela Abacate Maduro por a função ter sido chamada após um clique na imagem
+-->
+
+</html>
